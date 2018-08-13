@@ -26,3 +26,17 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.cls-2, .cls-3 {
+  fill: #626E72;
+  stroke-width: 0.5px; }
+
+  .cls-1, .cls-3 {
+    fill: none; }
+  
+  .cls-1, .cls-2, .cls-3 {
+    stroke: #626E72;
+    stroke-miterlimit: 10; }
+  
+  .cls-2 {
+    fill: #0192C9 !important; }
