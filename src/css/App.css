@@ -39,4 +39,31 @@
     stroke-miterlimit: 10; }
   
   .cls-2 {
-    fill: #0192C9 !important; }
+    fill: #0192C9 !important; 
+  }
+
+  ul {
+    list-style: none;
+    background: pink;
+    right: 10px;
+    padding: 0px;
+    width: 100px
+  }
+
+  .sidebar {
+    display: flex;
+    justify-content: right;
+    position: fixed;
+    top: 36%;
+    right: 0%
+  }
+
+  .li {
+    margin-bottom: 7px;
+  }
+
+  .fa-2x {
+    font-size: 20px;
+    margin-bottom: 13px;
+    color: grey;
+  }

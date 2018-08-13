@@ -1,22 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 import CompSvg from './animate_svg'
+import Home from './home'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <p className="App-intro">
-          <div>
             <div class="sidebar">
               <ul>
-                <li><i class="fas fa-home"></i></li>
-                <i class="fas fa-user"></i>
-                <i class="fas fa-asterisk"></i>
+                <li><i class="fas fa-home fa-2x"></i></li>
+                <li><i class="fas fa-user fa-2x"></i></li>
+                <li><i class="fas fa-asterisk fa-2x"></i></li>
+                <li><i class="fas fa-user fa-2x"></i></li>
+                <li><i class="fas fa-asterisk fa-2x"></i></li>
               </ul>
             </div>
-          </div>
+            <Home />
             {/* <CompSvg></CompSvg> */}
         </p>
       </div>
