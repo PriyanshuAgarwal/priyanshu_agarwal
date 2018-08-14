@@ -1,8 +1,8 @@
 .home-text {
-    position: absolute;
-    top: 35%;
-    margin-left: 2%;
-    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: flex-end;
 
 }
 

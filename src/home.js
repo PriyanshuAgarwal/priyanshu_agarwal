@@ -7,7 +7,7 @@ class Home extends Component {
       return (
         <div>
             <div class='home-container'>
-                <div className="">
+                <div className="home-text">
                     {/* <div className="row">
                         <h1>Hi,</h1>
                         <h2>I am Priyanshu</h2>
