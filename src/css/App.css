@@ -45,7 +45,7 @@
   ul {
     list-style: none;
     padding: 0px;
-    width: 100px
+    padding-right: 21px;
   }
 
   .sidebar {
@@ -61,8 +61,7 @@
   }
 
   .fa-2x {
-    font-size: 20px;
-    margin-bottom: 13px;
+    font-size: 16px;
     color: grey;
   }
 
@@ -75,4 +74,5 @@
     align-items: center;
     justify-content: center;
     display: flex;
+    margin-bottom: 16px;
   }
