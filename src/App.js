@@ -7,33 +7,43 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-intro">
-            <div class="sidebar">
+            <div className="sidebar">
               <ul>
                 <li>
                   <div className="icon">
-                    <i class="fas fa-home fa-2x"></i>
+                    <a href="/">
+                      <i className="fas fa-home fa-2x"></i>
+                    </a>
                   </div>
                 </li>
-                <div className="icon">
-                  <li>
-                    <i class="fas fa-user fa-2x"></i>
-                  </li>
-                </div>
-                <div className="icon">
-                  <li>
-                    <i class="fas fa-asterisk fa-2x"></i>
-                  </li>
-                </div>
-                <div className="icon">
-                  <li>
-                    <i class="fas fa-video fa-2x"></i>
-                  </li>
-                </div>
-                <div className="icon">
-                  <li>
-                    <i class="fas fa-envelope fa-2x"></i>
-                  </li>
-                </div>
+                <li>
+                  <div className="icon">
+                    <a href="/about">
+                      <i className="fas fa-user fa-2x"></i>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="icon">
+                    <a href="/skills">
+                      <i className="fas fa-asterisk fa-2x"></i>
+                    </a>
+                   </div>
+                </li>
+                <li>
+                  <div className="icon">
+                    <a href="/projects">
+                      <i className="fas fa-video fa-2x"></i>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="icon">
+                    <a href="/contact">
+                      <i className="fas fa-envelope fa-2x"></i>
+                    </a>  
+                  </div>
+                </li>
               </ul>
             </div>
             <div>

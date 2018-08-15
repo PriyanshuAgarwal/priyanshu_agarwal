@@ -3,12 +3,14 @@
     flex-direction: column;
     text-align: left;
     justify-content: flex-end;
-
+    font-weight: bold;
+    font-family: initial;
 }
 
 .home-container {
     position: absolute;
-    top: 35%;
+    top: 50%;
+    transform: translateY(-50%);
     margin-left: 2%;
     display: flex;
     width: 87%;
@@ -59,5 +61,23 @@
     -webkit-transition: 1.2s ease;
   }
 
+  .extra-large {
+    font-size: 110px;
+    color: #626e72;
+    padding: 0;
+    margin-bottom: -14px;
+  }
+
+  .large {
+    font-size: 60px;
+    color: #626e72;
+    margin-top: -30px;
+    padding-left: 5px;
+
+  }
+
+  .large span {
+    color: #0192c9;
+  }
 
 

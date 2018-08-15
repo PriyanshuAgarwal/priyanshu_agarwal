@@ -52,12 +52,9 @@
     display: flex;
     justify-content: right;
     position: fixed;
-    top: 36%;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0%
-  }
-
-  .li {
-    margin-bottom: 7px;
   }
 
   .fa-2x {
@@ -75,4 +72,18 @@
     justify-content: center;
     display: flex;
     margin-bottom: 16px;
+    cursor: pointer;
+  }
+
+  .btn-ctn{
+    font-family: Raleway Regular,sans-serif;
+    width: 290px;
+    height: 45px;
+    border: 1.5px solid #0192c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 2px;
+    cursor: pointer;
   }
