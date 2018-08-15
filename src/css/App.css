@@ -87,3 +87,7 @@
     padding-left: 2px;
     cursor: pointer;
   }
+
+  .btn-wrapper {
+    margin-top: 2%;
+  }

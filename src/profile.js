@@ -10,12 +10,19 @@ class Profile extends Component {
                     <img src={require('./images/profile_pic.jpeg')} />
                 </div>
                 <div className='profile-description-ctn'>
-                   <div className='profile-description'>A Web Developer who loves working on Frontend and Backend Technologies.</div>
-                    <div className='profile-description'>Currently pursuing MS in Computer Science from University of Florida. </div>
-                    <div className='profile-description'>I have a keen interest in Algorithms and Data Structures and love using them in real world scenario.</div>
-                    <div className='profile-description'>I love my family and friends.</div>
-                    <div className='profile-description'>I am thankful to God everyday.</div>
-                    <div className='profile-description'>Go Gators ! 🐊</div>
+                    <div className='profile-description'>
+                        <div>A Web Developer who loves working on Frontend and Backend Technologies.</div>
+                        <div>Currently pursuing MS in Computer Science from University of Florida. </div>
+                        <div>I have a keen interest in Algorithms and Data Structures and love using them in real world scenario.</div>
+                        <div>I love my family and friends.</div>
+                        <div>I am thankful to God everyday.</div>
+                        <div className='go-gator'>Go Gators ! 🐊</div>
+                    </div>
+                    <div className="btn-wrapper">
+                        <div className="btn-ctn">
+                            Download my resume 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
