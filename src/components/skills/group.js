@@ -9,34 +9,40 @@ class SkillGroup extends Component {
     super(props);
 
     this.getSkillList = this.getSkillList.bind(this);
+    this.getChunkData = this.getChunkData.bind(this);
+   }
+
+   getChunkData() {
+       let skills = JSON.parse(JSON.stringify(this.props.skills));
+       const size = 3;
+       let arrays = [];
+
+       while (skills.length > 0) {
+         arrays.push(skills.splice(0, size));
+       }
+       return arrays; 
    }
 
    getSkillList() {
-       return _.map(this.props.skills, (value, key) => {
-            return (
-               <div className='skill-progress-list'>
-                    <SkillList
-                       skills={this.props.skills}
-                    />
-               </div> 
-            )
-       })
+    const chunkData = this.getChunkData();
+    return _.map(chunkData, (value, key) => {
+          return (
+            <SkillList
+                skills={value}
+            />
+        )
+    })
    }
 
 
   render() {
-    return (
-      <div className="">
+     return (
+      <div>
         <div className='skill-desc-header'>
             {this.props.title}
         </div>
         <div className='skill-desc'>
-            {/* {this.getSkillList()} */}
- 
-                <SkillList
-                    skills={this.props.skills}
-                />
-
+            {this.getSkillList()}
         </div>
       </div>
     );

@@ -17,7 +17,6 @@ class Skill extends Component {
 
     fetchSkillData() {
         $.getJSON("skill.json", (response) => {
-            // console.log(response);
             this.setState({skills: response});
         })
     }
@@ -51,35 +50,6 @@ class Skill extends Component {
             {
                 this.getGroupData()
             }
-            {/* <div className='skill-desc-ctn'>
-                <div className='skill-desc-header'>
-                    Languages
-                </div>
-                <div className='skill-desc'>
-                    <div className='skill-progress-list'>
-                        <div className='skill-progress-item'>
-                            <span>JAVA</span>
-                        </div>
-                        <div className='skill-progress-item'>
-                            <span>JAVASCript</span>
-                        </div>
-                        <div className='skill-progress-item'>
-                            <span>REactJS</span>
-                        </div>
-                    </div>
-                    <div className='skill-progress-list'>
-                        <div className='skill-progress-item'>
-                            <span>JAVA</span>
-                        </div>
-                        <div className='skill-progress-item'>
-                            <span>JAVASCript</span>
-                        </div>
-                        <div className='skill-progress-item'>
-                            <span>REactJS</span>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
         </div>
       );
     }
