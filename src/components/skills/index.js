@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import  '../../css/skill.css';
 import $ from "jquery";
+import SkillGroup from './group';
+import _ from 'underscore';
 
 class Skill extends Component {
     constructor(props) {
@@ -10,11 +12,27 @@ class Skill extends Component {
         }
 
         this.fetchSkillData = this.fetchSkillData.bind(this);
+        this.getGroupData = this.getGroupData.bind(this);
     }
 
     fetchSkillData() {
         $.getJSON("skill.json", (response) => {
+            // console.log(response);
             this.setState({skills: response});
+        })
+    }
+
+    getGroupData() {
+       return _.map(this.state.skills, (value, key) => {
+            return (
+                <div className='skill-desc-ctn'>
+                    <SkillGroup
+                        title={key}
+                        key={key}
+                        skills={value}
+                    />
+                </div>
+                )
         })
     }
 
@@ -30,7 +48,10 @@ class Skill extends Component {
                     Skills
                 </div>
             </div>
-            <div className='skill-desc-ctn'>
+            {
+                this.getGroupData()
+            }
+            {/* <div className='skill-desc-ctn'>
                 <div className='skill-desc-header'>
                     Languages
                 </div>
@@ -58,7 +79,7 @@ class Skill extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
       );
     }
