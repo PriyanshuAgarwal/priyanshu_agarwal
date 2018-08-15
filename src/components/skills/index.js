@@ -1,7 +1,27 @@
 import React, { Component } from 'react';
 import  '../../css/skill.css';
+import $ from "jquery";
 
 class Skill extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            skills: null
+        }
+
+        this.fetchSkillData = this.fetchSkillData.bind(this);
+    }
+
+    fetchSkillData() {
+        $.getJSON("skill.json", (response) => {
+            this.setState({skills: response});
+        })
+    }
+
+    componentDidMount() {
+        this.fetchSkillData();
+    }
+
     render() {
       return (
         <div className='skill-container'>
