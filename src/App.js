@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './css/App.css';
 import Home from './home';
 import Profile from './profile';
-import Skill from './skill';
+import Skill from './components/skills/index.js';
 
 class App extends Component {
   constructor(props) {

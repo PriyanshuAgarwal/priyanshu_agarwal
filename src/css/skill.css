@@ -31,6 +31,18 @@
     font-weight: 700;
 }
 
+.skill-progress-list {
+    flex-wrap: wrap;
+    display: flex;
+    padding: 1% 2%;
+    width: 72%;
+    justify-content: space-between;
+}
+
+.skill-progress-list:first-child {
+    padding: 2% 2% 1%;
+}
+
 .skill-progress-item {
     width: 250px;
     height: 35px;
@@ -42,6 +54,8 @@
     border-radius: 8px;width: 250px;
     display: flex;
     align-items: center;
+    text-transform: uppercase;
+    font-size: initial;
 }
 
 .skill-progress-item span {
