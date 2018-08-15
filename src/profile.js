@@ -18,7 +18,7 @@ class Profile extends Component {
                         <div>I am thankful to God everyday.</div>
                         <div className='go-gator'>Go Gators ! 🐊</div>
                     </div>
-                    <div className="btn-wrapper">
+                    <div className="bttn-wrapper">
                         <div className="btn-ctn">
                             Download my resume 
                         </div>

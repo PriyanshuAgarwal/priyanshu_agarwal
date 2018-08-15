@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './css/App.css';
 import Home from './home';
 import Profile from './profile';
+import Skill from './skill';
 
 class App extends Component {
   constructor(props) {
@@ -67,8 +68,8 @@ class App extends Component {
             <div className={this.state.activeView === 'about' ? '' : 'hidden'}>
               <Profile />
             </div>
-            <div>
-
+            <div className={this.state.activeView === 'skills' ? '' : 'hidden'}>
+              <Skill />
             </div>
         </div>
       </div>
