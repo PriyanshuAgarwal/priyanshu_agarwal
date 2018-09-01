@@ -12,8 +12,19 @@ class Contact extends Component {
             </div>
         </div>
         <div className='contact-form-ctn'>
-            <div className='contact-form-body'>
-                
+            <div className='contact'>
+                <div className='contact-form'>
+                    <form>
+                        <label>Name</label>
+                        <input  placeholder="Write your name here..." value= ""></input>
+                        <label>Email</label>
+                        <input placeholder="Please let me know how to contact you back..." value= ""></input>
+                        <label>Message</label>
+                        <input placeholder="Please neter your message here" value= ""></input>
+                    </form>
+
+                </div>
+                <div className='contact-social'>sadasd</div>
             </div>
         </div>
     </div>
