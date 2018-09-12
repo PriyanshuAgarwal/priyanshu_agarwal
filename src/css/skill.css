@@ -58,7 +58,18 @@
     font-size: initial;
 }
 
-.skill-progress-item span {
-    margin-left: 6%;
-    transform: translateY(4%);
+.skill-progress-bar {
+    width: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: #0192c9;
 }
+
+
+.skill-progress-bar:hover {
+    transition: all 5s ease;
+}
+/* 
+.skill-progress-text:hover {
+    width: 0px;
+} */

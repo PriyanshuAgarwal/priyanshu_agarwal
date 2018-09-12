@@ -12,11 +12,12 @@ class SkillList extends Component {
   }
 
   getItems() {
-    return _.map(this.props.skills, (value, key)=> {
+    return _.map(this.props.skills, (value, key, id) => {
         return (
             <SkillItem
                 skillName={value.name}
                 percentage={value.percentage}
+                key={key}
             />
         )
     })

@@ -23,12 +23,30 @@ class Contact extends Component {
                         <input placeholder="Please neter your message here" value= ""></input>
                     </form>
 
+                    <div className="bttn-wrapper message-wrapper">
+                        <div className="btn-ctn message-text">
+                            Send Message
+                        </div>
+                    </div>
+
                 </div>
                 <div className='contact-social'>
                     <div clssName='contact-social-media-icon-ctn'>
-                       <div class="img-ctn social-media-icon">
+                       <div className="img-ctn social-media-icon">
                        <a href="" target='_top'>
-                            <img src={require('./images/email-color.svg')} alt='email' title ='email'/>
+                            <img className="img-height" src={require('./images/email-color.svg')} alt='email' title ='email'/>
+                       </a>
+                       <a href="" target='_top'>
+                            <img className="img-height" src={require('./images/github-color.svg')} alt='email' title ='email'/>
+                       </a>
+                       <a href="" target='_top'>
+                            <img className="img-height" src={require('./images/instagram-color.svg')} alt='email' title ='email'/>
+                       </a>
+                       <a href="" target='_top'>
+                            <img className="img-height" src={require('./images/linkedin-color.svg')} alt='email' title ='email'/>
+                       </a>
+                       <a href="" target='_top'>
+                            <img className="img-height" src={require('./images/twitter-color.svg')} alt='email' title ='email'/>
                        </a>
                        </div> 
                     </div>

@@ -69,14 +69,24 @@ form {
     justify-content: flex-start;
 }
 
-.img-ctn .social-media-icon a {
-    text-decoration: none;
-    width: 50px;
-    height: 60px;
+.social-media-icon {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
 }
+
+.img-height {
+    height: 30px;
+}
+
+.message-wrapper {
+    margin-top: 28px;
+    display: flex;
+    justify-content: center;
+}
+.message-text {
+    width: 144px;
+    font-size: 13px;
+}
+
 
 
