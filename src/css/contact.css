@@ -56,4 +56,27 @@ form {
 .contact-social{
     width: 50%;
     border-left: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+
+.contact-social-media-icon-ctn {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.img-ctn .social-media-icon a {
+    text-decoration: none;
+    width: 50px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
