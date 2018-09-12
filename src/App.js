@@ -4,6 +4,7 @@ import Home from './home';
 import Profile from './profile';
 import Skill from './components/skills/index.js';
 import Contact from './contact';
+import Project from './project';
 
 class App extends Component {
   constructor(props) {
@@ -71,6 +72,9 @@ class App extends Component {
             </div>
             <div className={this.state.activeView === 'skills' ? '' : 'hidden'}>
               <Skill />
+            </div>
+            <div className={this.state.activeView === 'projects' ? '' : 'hidden'}>
+              <Project />
             </div>
             <div className={this.state.activeView === 'contact' ? '' : 'hidden'}>
               <Contact />
