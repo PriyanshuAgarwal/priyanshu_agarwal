@@ -5,15 +5,25 @@ import Profile from './profile';
 import Skill from './components/skills/index.js';
 import Contact from './contact';
 import Project from './project';
+import SidebarIcon from './sidebarIcon';
+import _ from 'underscore';
 
 class App extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      activeView: 'home'
+      activeView: 'home',
+      models: [
+        {name: "home", icon: "home" },
+        {name: "about", icon: "user"},
+        {name: "skills", icon: "asterisk"},
+        {name: "projects", icon: "video"},
+        {name: "contact", icon: "envelope"}
+      ]
     }
 
+    this.renderIcons = this.renderIcons.bind(this);
     this.changeView = this.changeView.bind(this);
   }
 
@@ -21,47 +31,25 @@ class App extends Component {
     this.setState({activeView: newView})
   }
 
+  renderIcons() {
+    return _.map(this.state.models, (model) => {
+      return (<SidebarIcon
+        onChange={this.changeView}
+        modelName={model.name}
+        icon={model.icon}
+        isActive={this.state.activeView === model.name} 
+      />)
+    })
+  }
+
   render() {
+    const { activeView } = this.state;
     return (
       <div className="App">
         <div className="App-intro">
             <div className="sidebar">
               <ul>
-                <li onClick={() => this.changeView('home')}>
-                  <div className="icon">
-                    <a>
-                      <i className="fas fa-home fa-2x"></i>
-                    </a>
-                  </div>
-                </li>
-                <li onClick={() => this.changeView('about')}>
-                  <div className="icon">
-                    <a>
-                      <i className="fas fa-user fa-2x"></i>
-                    </a>
-                  </div>
-                </li>
-                <li onClick={() => this.changeView('skills')}>
-                  <div className="icon">
-                    <a>
-                      <i className="fas fa-asterisk fa-2x"></i>
-                    </a>
-                   </div>
-                </li>
-                <li onClick={() => this.changeView('projects')}>
-                  <div className="icon">
-                    <a>
-                      <i className="fas fa-video fa-2x"></i>
-                    </a>
-                  </div>
-                </li>
-                <li onClick={() => this.changeView('contact')}>
-                  <div className="icon">
-                    <a>
-                      <i className="fas fa-envelope fa-2x"></i>
-                    </a>  
-                  </div>
-                </li>
+                {this.renderIcons()}
               </ul>
             </div>
             <div className={this.state.activeView === 'home' ? '' : 'hidden'}>

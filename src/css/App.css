@@ -62,12 +62,14 @@
     color: grey;
   }
 
+  .selected-icon {
+    border: 2px solid #0192c9;
+    border-radius: 50%;
+  }
+
   .icon {
     height: 35px;
     width: 35px;
-    /* border-color: blue; */
-    border: 2px solid #0192c9;
-    border-radius: 50%;
     align-items: center;
     justify-content: center;
     display: flex;
