@@ -109,7 +109,6 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
   .module-header {
@@ -124,4 +123,18 @@
 
 .m-t-10 {
   margin-top: 10%;
+}
+
+.sidebar {
+  height: 300px;
+  top: 32%;
+  position: relative;
+}
+
+
+.sidebar-items{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: inherit;
 }

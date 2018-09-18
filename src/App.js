@@ -49,7 +49,7 @@ class App extends Component {
         <div className="App-intro">
           <div className='sidebar-ctn'>
             <div className="sidebar">
-              <div>
+              <div className='sidebar-items'>
                 {this.renderIcons()}
               </div>
             </div>

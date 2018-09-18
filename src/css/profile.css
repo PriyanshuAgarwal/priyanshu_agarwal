@@ -99,6 +99,13 @@
     right: 263.438px;
 }
 
+.square-position-3 {
+    transform: rotate(45deg);
+    top: 1033px;
+    left: 258.4px;
+    right: 263.438px;
+}
+
 .work-item .work-item-right-ctn {
     border-left: 1px solid #626e72;
     width: 75%;

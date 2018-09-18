@@ -36,10 +36,10 @@ class Profile extends Component {
                     <div class="work-item-left-ctn">
                         <div class="work-item-left-body">
                             <div class="work-item-month">
-                            <p class="work-item-text">FEB - NOV</p>
+                            <p class="work-item-text">JULY</p>
                             </div>
                             <div class="work-item-year">
-                            <p class="work-item-text">2017</p>
+                            <p class="work-item-text">2018</p>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ class Profile extends Component {
                             </div>
                             <div class="work-company-desc">
                             <div class="work-company-header">
-                                <p>NOWFlOATS TECHNOLOGIES</p>
+                                <p>KITSUNE TECHNOLOGIES</p>
                             </div>
                             <div class="work-company-post">
                                 <p>Front End Developer</p>
@@ -66,10 +66,10 @@ class Profile extends Component {
                     <div class="work-item-left-ctn">
                         <div class="work-item-left-body">
                             <div class="work-item-month">
-                            <p class="work-item-text">NOV - JAN</p>
+                            <p class="work-item-text">DEC - JUN</p>
                             </div>
                             <div class="work-item-year">
-                            <p class="work-item-text">2015 - 16</p>
+                            <p class="work-item-text">2016 - 18</p>
                             </div>
                         </div>
                     </div>
@@ -97,14 +97,14 @@ class Profile extends Component {
                     <div class="work-item-left-ctn">
                         <div class="work-item-left-body">
                             <div class="work-item-month">
-                            <p class="work-item-text">NOV - JAN</p>
+                            <p class="work-item-text">SEPT - DEC</p>
                             </div>
                             <div class="work-item-year">
                             <p class="work-item-text">2015 - 16</p>
                             </div>
                         </div>
                     </div>
-                    <div class="square square-position-2" >
+                    <div class="square square-position-3" >
                         <div class="circle"></div>
                     </div>
                     <div class="work-item-right-ctn">
