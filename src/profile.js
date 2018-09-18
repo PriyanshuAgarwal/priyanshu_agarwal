@@ -49,15 +49,14 @@ class Profile extends Component {
                     <div class="work-item-right-ctn">
                         <div class="work-item-right-body">
                             <div class="work-img">
-                                {/* <img class="" src="/static/media/hashedin.2ab4b52d.svg" alt="HASHEDIN TECHNOLOGIES"> */}
+                                <img src={require('./images/getKitsune.png')} />
                             </div>
-                            <div class="work-seperator"></div>
                             <div class="work-company-desc">
                             <div class="work-company-header">
-                                <p>HASHEDIN TECHNOLOGIES</p>
+                                <p>NOWFlOATS TECHNOLOGIES</p>
                             </div>
                             <div class="work-company-post">
-                                <p>Technology Analyst &amp; Software Engineer Intern</p>
+                                <p>Front End Developer</p>
                             </div>
                             </div>
                         </div>
@@ -80,15 +79,45 @@ class Profile extends Component {
                     <div class="work-item-right-ctn">
                         <div class="work-item-right-body" >
                             <div class="work-img">
+                                <img src={require('./images/reportgarden.png')} />
                              {/* <img class="trailing-space" src="" alt="SUPPLIFIED TECHNOLOGIES"> */}
                             </div>
-                            <div class="work-seperator"></div>
                             <div class="work-company-desc">
                             <div class="work-company-header">
-                                <p>SUPPLIFIED TECHNOLOGIES</p>
+                                <p>REPORTGARDEN TECHNOLOGIES</p>
                             </div>
                             <div class="work-company-post">
-                                <p>Software Engineer Intern</p>
+                                <p>Full Stack Developer</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-item-left-ctn">
+                        <div class="work-item-left-body">
+                            <div class="work-item-month">
+                            <p class="work-item-text">NOV - JAN</p>
+                            </div>
+                            <div class="work-item-year">
+                            <p class="work-item-text">2015 - 16</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="square square-position-2" >
+                        <div class="circle"></div>
+                    </div>
+                    <div class="work-item-right-ctn">
+                        <div class="work-item-right-body" >
+                            <div class="work-img">
+                                <img src={require('./images/tcs.jpeg')} />
+                            </div>
+                            <div class="work-company-desc">
+                            <div class="work-company-header">
+                                <p>TCS INNOVATION LABS</p>
+                            </div>
+                            <div class="work-company-post">
+                                <p>Assistant System Engineer</p>
                             </div>
                             </div>
                         </div>
