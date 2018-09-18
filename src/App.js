@@ -47,11 +47,13 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-intro">
+          <div className='sidebar-ctn'>
             <div className="sidebar">
-              <ul>
+              <div>
                 {this.renderIcons()}
-              </ul>
+              </div>
             </div>
+          </div>
             <div className={this.state.activeView === 'home' ? '' : 'hidden'}>
               <Home />
             </div>
