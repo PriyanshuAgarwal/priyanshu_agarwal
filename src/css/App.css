@@ -111,3 +111,17 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  .module-header {
+    display: flex;
+    flex-basis: 30%;
+    color: #525c60;
+    font-size: 36px;
+    font-weight: 900;
+    border-bottom: 3px solid #0192c9;
+    width: 300px;
+}
+
+.m-t-10 {
+  margin-top: 10%;
+}
