@@ -58,18 +58,55 @@
     font-size: initial;
 }
 
+.skill-progress-item:hover .skill-progress-bar .skill-progress-value {
+    visibility: visible;
+}
+
+
+.skill-progress-item:hover .skill-progress-text {
+    visibility: hidden;
+}
+
+.skill-progress-item:hover .skill-progress-bar {
+    visibility: visible;
+}
+
+.skill-progress-item:hover .percentage-8 {
+    width: 80%;
+    /* visibility: visible; */
+}
+
+.skill-progress-item:hover .percentage-7 {
+    width: 70%;
+    /* visibility: visible; */
+}
+
+.skill-progress-item:hover .percentage-6 {
+    width: 60%;
+    /* visibility: visible; */
+}
+
+.skill-progress-item:hover .percentage-9 {
+    width: 90%;
+    /* visibility: visible; */
+}
+
+.skill-progress-value  {
+    visibility: hidden;
+}
+
+
+
 .skill-progress-bar {
     width: 0px;
     padding: 0px;
     height: 100%;
+    visibility: hidden;
     background-color: #0192c9;
+    transition: all 1s ease;
 }
 
 
 .skill-progress-bar:hover {
     transition: all 5s ease;
 }
-/* 
-.skill-progress-text:hover {
-    width: 0px;
-} */
