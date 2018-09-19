@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import  './css/home.css';
+import PropTypes from 'prop-types';
 import CompSvg from './animate_svg';
 
 class Home extends Component {
@@ -14,7 +15,7 @@ class Home extends Component {
                         <div className='large'>full stack developer</div>
                     </div>
                     <div className="bttn-wrapper row">
-                        <div className= "btn-ctn">
+                        <div className="btn-ctn" onClick={() => this.props.changeView('about')}>
                             Explore More 
                         </div>
                     </div>
@@ -23,12 +24,16 @@ class Home extends Component {
                     <CompSvg />
                 </div>
             </div>
-            <div>
+            <div onClick={() => this.props.changeView('about')}>
                 <i id="moveDown" className="fa fa-chevron-down fa-3x bounce"></i>
             </div>
         </div>
       );
     }
+  }
+
+  Home.propTypes = {
+      changeView: PropTypes.func
   }
 
   export default Home;

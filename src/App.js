@@ -55,7 +55,7 @@ class App extends Component {
             </div>
           </div>
             <div className={this.state.activeView === 'home' ? '' : 'hidden'}>
-              <Home />
+              <Home changeView={this.changeView}/>
             </div>
             <div className={this.state.activeView === 'about' ? '' : 'hidden'}>
               <Profile />
